@@ -1,0 +1,94 @@
+@import 'base/animations';
+
+@import 'abstracts/variables';
+
+@import 'components/button';
+
+
+.landing {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgb(27, 19, 16), rgba(119, 61, 42, 0.603)) , url('/assets/img/landing-img.jpg');
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
+
+  position: relative;
+
+  &__text-box {
+    position: absolute;
+
+    top: 40%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+    backface-visibility: hidden;
+  }
+
+  &-main {
+    color: $color-white;
+    font-family: 'Nunito', sans-serif;  /* 300 400 600 700 */
+    text-transform: uppercase;
+    text-align: center;
+
+
+
+    margin-bottom: 5rem;
+  }
+
+  &-main--animation {
+    animation: moveUp 1s ease-out 1s;
+    animation-fill-mode: backwards;
+    backface-visibility: hidden;
+  }
+
+  &-main__title {
+    display: block;
+    font-weight: 600;
+    font-size: 5.5rem;
+    letter-spacing: 1.2rem;
+
+    animation: moveInLeft 1s ease-out;
+  }
+
+  &-main__sub {
+    display: block;
+    font-weight: 300;
+    font-size: 2.8rem;
+    letter-spacing: .4rem;
+    animation: moveInRight 1s ease-out;
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+
+    animation: fadeIn .5s ease-out 2.5s;
+    animation-fill-mode: backwards;
+  }
+
+  &__logo {
+    height: 10rem;
+  }
+}
+
+.btn--landing {
+  background-color: $color-white;
+  color: $color-primary;
+  font-size: 2.5rem;
+
+  animation: fadeIn .5s ease-out 2s;
+  animation-fill-mode: backwards;
+
+  &:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 20px $color-grey-dark;
+  }
+
+  &:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem $color-grey-dark;
+  }
+}
+
