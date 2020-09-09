@@ -1,11 +1,27 @@
 // COLORS
 $color-white: #fff;
 $color-grey-dark: #202020;
+$color-grey-light: rgb(241, 241, 241);
 
 $color-primary: #793e2a;
+
+$color-font-primary: #464646;
 
 
 // GRID
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
-$gutter-horizontal: 6rem;
+$gutter-horizontal: 7rem;
+
+
+// FONTS
+$default-font-size: 1.6rem;
+$default-font-family: 'Nunito Sans', sans-serif;
+
+
+// GRADIENTS
+$card-header-gradient: linear-gradient(to bottom left, rgba($color-primary, 0.55), rgba($color-grey-dark, 0.83));
+
+
+// STYLES
+$default-border-radius: 3px;

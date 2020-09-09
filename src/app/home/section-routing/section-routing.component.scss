@@ -1,0 +1,55 @@
+@import "abstracts/variables";
+
+section {
+  height: 100rem;
+}
+
+.nav-card {
+  background-color: $color-white;
+  height: 40rem;
+  text-align: center;
+  border-radius: $default-border-radius;
+  position: relative;
+
+  &__image {
+
+    background-size: cover;
+    height: 17rem;
+    background-position: center;
+    background-blend-mode: color-burn;
+    border-top-left-radius: $default-border-radius;
+    border-top-right-radius: $default-border-radius;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+    &--1 {
+      background-image: $card-header-gradient, url("/assets/img/products-img.jpg");
+    }
+
+    &--2 {
+      background-image: $card-header-gradient, url("/assets/img/process-img.jpg");
+    }
+
+    &--3 {
+      background-image: $card-header-gradient, url("/assets/img/team-img.jpg");
+    }
+  }
+
+  &__header {
+
+    height: 6.5rem;
+    color: $color-white;
+
+    &--span {
+      position: absolute;
+      top: 5.5rem;
+      left: 0;
+      width: 100%;
+
+    }
+  }
+
+  &__content {
+    width: 88%;
+    margin: 0 auto;
+  }
+}
