@@ -1,3 +1,7 @@
+.default-heading {
+  font-size: 6rem;
+}
+
 .heading-3 {
   text-transform: uppercase;
   font-weight: 400;
@@ -6,6 +10,12 @@
 
 .default-content {
   font-size: 1.7rem;
+  line-height: 2.7rem;
+  color: $color-font-primary;
+}
+
+.large-content {
+  font-size: 2rem;
   line-height: 2.7rem;
   color: $color-font-primary;
 }

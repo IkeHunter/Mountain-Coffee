@@ -1,0 +1,81 @@
+@import "abstracts/variables";
+
+.about {
+
+  &-header {
+    background-image: linear-gradient(to left bottom, rgba(66, 66, 66, 0.3), rgba(0, 0, 0, 0.7)), url("/assets/img/header-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color-burn;
+
+    height: 93vh;
+
+    & .row-content {
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      // margin-right: 0;
+      // margin-left: 0;
+    }
+    // & [class^="col-"] {
+    //   height: 100%;
+    // }
+
+    &__title {
+      color: $color-grey-light;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__content {
+      background-color: $color-white;
+      height: 101%;
+      width: 50%;
+      position: absolute;
+      top: 0;
+
+      right: 0;
+      clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+
+      &--container {
+        background-color: $color-white;
+        // width: 50rem;
+        width: 100%;
+        height: 100%;
+        // clip-path: polygon(0 0, 10% 0, 100% 100%, 0 100%);
+
+        position: relative;
+        background-color: $color-grey-dark;
+
+      }
+
+      & p {
+        position: absolute;
+        top: 6%;
+        width: 70%;
+        height: 100%;
+        transform: translate(15%, 0);
+        color: $color-grey-light;
+        font-size: 2.5rem;
+        line-height: 5rem;
+        letter-spacing: .1rem;
+
+        &::before {
+          content: "";
+          width: 25%;
+          height: 100%;
+          float: left;
+          shape-outside: polygon(0% 0%, 100% 0%, 0% 100%);
+
+        }
+
+      }
+    }
+
+  }
+
+}
+
