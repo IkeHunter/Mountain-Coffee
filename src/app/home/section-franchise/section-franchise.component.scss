@@ -1,0 +1,55 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "components/button";
+
+.franchise {
+  background-image: linear-gradient(to bottom, rgba(31, 10, 3, 0.938), rgba(37, 16, 16, 0.5)), url("/assets/img/business-img.jpg");
+  background-size: cover;
+  background-position: top;
+  background-blend-mode: multiply;
+
+  margin-top: 20rem;
+  height: 80vh;
+  position: relative;
+
+  &__heading {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    text-align: center;
+
+    &--title {
+      @include title;
+
+      &:after {
+        content: "";
+        display: block;
+        margin: 3rem auto;
+        width: 30%;
+
+        border-bottom: 3px solid $color-grey-light;
+      }
+    }
+
+    &--sub {
+      color: $color-grey-light;
+      font-size: $default-font-size;
+    }
+
+  }
+
+  &__button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &--link {
+      color: $color-grey-light;
+      border: solid $color-grey-light 2px;
+    }
+  }
+
+}

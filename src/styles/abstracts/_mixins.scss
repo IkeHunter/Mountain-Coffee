@@ -5,3 +5,12 @@
     clear: both;
   }
 }
+
+@mixin title {
+  font-family: $default-header-font;
+  font-weight: 600;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  color: $color-grey-light;
+  font-size: 4.5rem;
+}
