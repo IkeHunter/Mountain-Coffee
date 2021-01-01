@@ -2,7 +2,8 @@
 $color-white: #fff;
 $color-black: #000;
 $color-grey-dark: #202020;
-$color-grey-light: rgb(241, 241, 241);
+$color-grey-1: #424242;
+$color-grey-light: #f1f1f1;
 
 $color-primary: #793e2a;
 
@@ -24,8 +25,13 @@ $default-header-font: 'Nunito', sans-serif;
 // GRADIENTS
 $card-header-gradient: linear-gradient(to bottom left, rgba($color-primary, 0.55), rgba($color-grey-dark, 0.83));
 
+$primary-gradient-color-1: #1f0a03;
+$primary-gradient-color-2: #251010;
+
 
 // STYLES
 $default-border-radius: 4px;
 $default-box-shadow: 0 0 6rem rgba(#000, .1);
+
+$default-section-margin: 20rem;
 

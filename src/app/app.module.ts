@@ -8,6 +8,7 @@ import { LandingComponent } from './home/landing/landing.component';
 import { SectionRoutingComponent } from './home/section-routing/section-routing.component';
 import { SectionAboutComponent } from './home/section-about/section-about.component';
 import { SectionFranchiseComponent } from './home/section-franchise/section-franchise.component';
+import { SectionReviewsComponent } from './home/section-reviews/section-reviews.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SectionFranchiseComponent } from './home/section-franchise/section-fran
     LandingComponent,
     SectionRoutingComponent,
     SectionAboutComponent,
-    SectionFranchiseComponent
+    SectionFranchiseComponent,
+    SectionReviewsComponent
   ],
   imports: [
     BrowserModule,
