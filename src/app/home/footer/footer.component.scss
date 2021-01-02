@@ -1,0 +1,76 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+$top-border: solid $color-grey-light 1px;
+$top-padding: 2rem;
+
+.footer {
+  position: relative;
+  margin-top: $default-section-margin;
+  height: 40rem;
+
+  background-color: $color-grey-dark;
+
+  &__logo {
+    padding-top: 5rem;
+    text-align: center;
+
+    &--img {
+      width: 10rem;
+      height: auto;
+    }
+  }
+
+  &__name {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 7rem;
+
+    color: $color-grey-light;
+    font-size: 3rem;
+    font-family: $default-header-font;
+  }
+
+  &__container {
+    position: relative;
+    width: 100%;
+  }
+
+  &__links {
+    list-style-type: none;
+    padding-top: $top-padding;
+    border-top: $top-border;
+    display: inline-block;
+
+    &--item {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+    }
+
+    &--link {
+
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color-grey-light;
+        display: inline-block;
+        font-size: 1.7rem;
+      }
+    }
+
+
+
+  }
+
+  &__copy {
+    float: right;
+    border-top: $top-border;
+    padding-top: $top-padding;
+    color: $color-grey-light;
+    font-size: 1.7rem;
+    width: 90%;
+  }
+}
