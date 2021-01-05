@@ -9,7 +9,7 @@
     background-position: center;
     background-blend-mode: color-burn;
 
-    height: 93vh;
+    height: 90rem;
 
     & .row-content {
       height: 100%;
@@ -24,7 +24,7 @@
 
     &__title {
       @include title;
-      
+
       text-align: center;
       position: absolute;
       top: 50%;
@@ -57,11 +57,11 @@
       & p {
         position: absolute;
         top: 6%;
-        width: 70%;
+        width: 83%;
         height: 100%;
-        transform: translate(15%, 0);
+        transform: translate(10%, 0);
         color: $color-grey-light;
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 5rem;
         letter-spacing: .1rem;
 
