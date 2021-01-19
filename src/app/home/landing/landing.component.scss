@@ -1,6 +1,7 @@
 @import 'base/animations';
 
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 @import 'components/button';
 
@@ -16,11 +17,14 @@
 
   position: relative;
 
+
+
   &__text-box {
     position: absolute;
 
     top: 40%;
     left: 50%;
+    // width: 100%;
 
     transform: translate(-50%, -50%);
     text-align: center;
@@ -73,6 +77,24 @@
   &__logo {
     height: 10rem;
   }
+
+
+  @include respond(tab-land) {
+    &__text-box {
+      width: 100%;
+
+    }
+
+    &-main--animation { animation: none; }
+    &-main__title { animation: none; }
+    &-main__sub { animation: none; }
+    &__logo-box { animation: none; }
+    .btn--landing { animation: none; }
+
+
+  }
+
+
 }
 
 .btn--landing {
