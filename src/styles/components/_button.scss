@@ -13,12 +13,7 @@
 
   }
 
-
-
-  &--landing {
-    animation: fadeIn .5s ease-out 2s;
-    animation-fill-mode: backwards;
-
+  &--header {
     background-color: transparent;
     color: $color-white;
     border: 2px solid $color-white;
@@ -28,6 +23,11 @@
       color: $color-primary;
       font-weight: 600;
     }
+  }
+
+  &--landing {
+    animation: fadeIn .5s ease-out 2s;
+    animation-fill-mode: backwards;
   }
 }
 
