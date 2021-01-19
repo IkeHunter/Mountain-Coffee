@@ -10,6 +10,7 @@ import { SectionAboutComponent } from './home/section-about/section-about.compon
 import { SectionFranchiseComponent } from './home/section-franchise/section-franchise.component';
 import { SectionReviewsComponent } from './home/section-reviews/section-reviews.component';
 import { FooterComponent } from './home/footer/footer.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './home/footer/footer.component';
     SectionAboutComponent,
     SectionFranchiseComponent,
     SectionReviewsComponent,
-    FooterComponent
+    FooterComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
