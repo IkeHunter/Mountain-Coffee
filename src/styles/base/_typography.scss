@@ -19,3 +19,22 @@
   line-height: 2.7rem;
   color: $color-font-primary;
 }
+
+@include respond(tab-land) {
+  .default-content {
+    font-size: 2.4rem;
+    line-height: $tab-land-line-height;
+  }
+
+}
+
+@include respond(tab-port) {
+  .default-content {
+    font-size: 3rem;
+    line-height: $tab-port-line-height;
+  }
+
+  .heading-3 {
+    font-size: 4rem;
+  }
+}

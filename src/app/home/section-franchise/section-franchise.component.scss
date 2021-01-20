@@ -35,7 +35,10 @@
 
     &--sub {
       color: $color-grey-light;
-      font-size: $default-font-size;
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+      // font-size: $default-font-size;
     }
 
   }
@@ -50,6 +53,10 @@
       color: $color-grey-light;
       border: solid $color-grey-light 2px;
     }
+  }
+
+  @include respond(tab-port) {
+    height: 50vh;
   }
 
 }

@@ -29,6 +29,14 @@
     animation: fadeIn .5s ease-out 2s;
     animation-fill-mode: backwards;
   }
+
+  @include respond(tab-port) {
+    &:link,
+    &:visited {
+      font-size: 4rem;
+    }
+  }
+
 }
 
 

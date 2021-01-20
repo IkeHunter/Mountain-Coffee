@@ -16,13 +16,17 @@ $color-font-primary: #464646;
 // GRID
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
 $gutter-horizontal: 7rem;
 
 
 // FONTS
-$default-font-size: 1.6rem;
+$default-font-size: 1.7rem;
 $default-content-font: 'Nunito Sans', sans-serif;
 $default-header-font: 'Nunito', sans-serif;
+
+$tab-land-line-height: 3.5rem;
+$tab-port-line-height: 5.7rem;
 
 
 // GRADIENTS
@@ -33,7 +37,7 @@ $primary-gradient-color-2: #251010;
 
 
 // STYLES
-$default-border-radius: 4px;
+$default-border-radius: 5px;
 $default-box-shadow: 0 0 6rem rgba(#000, .1);
 
 $default-section-margin: 20rem;

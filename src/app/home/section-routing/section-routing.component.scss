@@ -1,4 +1,5 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 .nav-card {
   background-color: $color-white;
@@ -58,6 +59,10 @@
 
   &__group:hover &:not(:hover) {
     transform: scale(0.98);
+  }
+
+  @include respond(tab-port) {
+    height: 50rem;
   }
 
 }

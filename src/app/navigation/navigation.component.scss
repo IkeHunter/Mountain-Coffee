@@ -1,4 +1,5 @@
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 .navigation {
   &__checkbox {
@@ -106,7 +107,8 @@
   //ICON
   &__icon {
       position: relative;
-      margin-top: 3.5rem;
+      margin-top: 50%;
+      transform: translate(0, -50%);
 
       &,
       &::before,
@@ -148,4 +150,25 @@
       top: 0;
       transform: rotate(135deg);
   }
+
+
+  @include respond(tab-port) {
+    &__button {
+      width: 9rem;
+      height: 9rem;
+    }
+
+    &__icon {
+      &,
+      &::before,
+      &::after {
+        width: 3.5rem;
+      }
+
+      &::before { top: -1rem;  }
+      &::after { top: 1rem; }
+    }
+  }
+
+
 }

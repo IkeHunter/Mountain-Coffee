@@ -123,26 +123,79 @@
         color: $color-primary;
       }
       &--content {
-        font-size: 1.8rem;
+        // font-size: 1.8rem;
         margin-top: 1.5rem;
         font-style: italic;
       }
     }
 
-    @include respond(tab-land) {
+
+
+  }
+
+  @include respond(tab-land) {
+    border-radius: 0;
+    overflow: hidden;
+
+    height: 140rem;
+
+    & > &__card {
+      margin: 25rem auto 0 auto;
+    }
+    & > &__card ~ &__card {
+      margin: 5rem auto 0 auto;
+    }
+
+    &__card {
+      position: relative;
       clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%) !important;
       width: 80%;
-      @include horizCenter;
+      height: 30rem;
+      // float: left;
+      top: auto;
+      left: auto;
+      right: auto;
+      // transform: translate(2.5%, 0);
+
+      &--person {
+
+        width: 15rem;
+        float: left;
+        margin: 0 1.8rem;
+
+        &--face {
+          @include absCenter;
+          top: 45%;
+          width: 15rem;
+          border-radius: 50%;
+        }
+        &--name {
+          position: absolute;
+          top: 80%;
+          width: 100%;
+          text-align: center;
+          font-size: 2rem;
+        }
+      }
 
       &--container {
         text-align: left !important;
         float: left !important;
+        width: 75%;
+        &--content {
+          line-height: 4rem;
+        }
       }
 
       &--person {
         float: left !important;
       }
     }
+
+  }
+
+  @include respond(tab-port) {
+    &__card { width: 95%; }
 
   }
 }

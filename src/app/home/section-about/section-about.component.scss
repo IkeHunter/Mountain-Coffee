@@ -12,7 +12,7 @@
 
 
     height: 90rem;
-    max-height: 90rem;
+    // max-height: 90rem;
 
     & .row-content {
       height: 100%;
@@ -39,12 +39,13 @@
     }
 
     &__content {
-      background-color: $color-white;
+      background-color: transparent;
+      box-shadow: 0 0 6rem rgba($color-black, 0.8);
+      ;
       height: 101%;
       width: 50%;
       position: absolute;
       top: 0;
-
       right: 0;
       clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
 
@@ -67,7 +68,7 @@
         height: 100%;
         transform: translate(10%, 0);
         color: $color-grey-light;
-        font-size: 2rem;
+        // font-size: 2rem;
         line-height: 5rem;
         letter-spacing: .1rem;
 
@@ -84,6 +85,59 @@
     }
 
   }
+
+  @include respond(tab-land) {
+    &-header__content p {
+      line-height: $tab-land-line-height;
+    }
+  }
+
+  @include respond(tab-port) {
+
+
+
+    &-header {
+      height: 100rem;
+      &__title {
+        @include horizCenter;
+        width: 100%;
+        top: 10%;
+
+      }
+
+      &__content {
+        @include horizCenter;
+        top: auto;
+        bottom: 3rem;
+        width: 95%;
+        height: 70%;
+        clip-path: none;
+        border-radius: $default-border-radius;
+
+        &--container { border-radius: $default-border-radius; }
+
+        & p {
+          // position: relative;
+          @include absCenter;
+          transform: translate(-50%, -40%) !important;
+          width: 100%;
+          transform: none;
+          text-align: center;
+          padding: 2rem;
+          border-radius: $default-border-radius;
+          line-height: $tab-port-line-height;
+
+          &::before {
+            width: 0;
+          }
+        }
+      }
+    }
+
+
+  }
+
+
 
 }
 
