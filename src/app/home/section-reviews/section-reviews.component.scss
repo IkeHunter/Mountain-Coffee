@@ -27,6 +27,7 @@
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 
     &--title {
 
@@ -88,7 +89,8 @@
       position: relative;
       display: block;
       height: 100%;
-      width: 10rem;
+      // width: 10rem;
+      width: 10%;
       float: left;
       margin: 0 1.8rem;
 
@@ -137,7 +139,7 @@
     border-radius: 0;
     overflow: hidden;
 
-    height: 140rem;
+    height: 150rem;
 
     & > &__card {
       margin: 25rem auto 0 auto;
@@ -150,7 +152,7 @@
       position: relative;
       clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%) !important;
       width: 80%;
-      height: 30rem;
+      height: 36rem;
       // float: left;
       top: auto;
       left: auto;
@@ -159,7 +161,7 @@
 
       &--person {
 
-        width: 15rem;
+        width: 20%;
         float: left;
         margin: 0 1.8rem;
 
@@ -171,7 +173,7 @@
         }
         &--name {
           position: absolute;
-          top: 80%;
+          top: 75%;
           width: 100%;
           text-align: center;
           font-size: 2rem;
@@ -181,7 +183,8 @@
       &--container {
         text-align: left !important;
         float: left !important;
-        width: 75%;
+        width: 70%;
+        margin: 1rem;
         &--content {
           line-height: 4rem;
         }
@@ -195,7 +198,147 @@
   }
 
   @include respond(tab-port) {
-    &__card { width: 95%; }
+
+    height: 180rem;
+
+    &__card {
+      position: relative;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%) !important;
+      width: 95%;
+      height: 45rem;
+      // float: left;
+      top: auto;
+      left: auto;
+      right: auto;
+      // transform: translate(2.5%, 0);
+
+      &--person {
+
+        width: 20%;
+        float: left;
+        margin: 0 1.8rem;
+
+        &--face {
+          @include absCenter;
+          top: 45%;
+          width: 15rem;
+          border-radius: 50%;
+        }
+        &--name {
+          position: absolute;
+          top: 70%;
+          width: 100%;
+          text-align: center;
+          font-size: 2rem;
+        }
+      }
+
+      &--container {
+        text-align: left !important;
+        float: left !important;
+        width: 70%;
+        margin: 1rem;
+        &--content {
+          line-height: 4rem;
+        }
+      }
+
+      &--person {
+        float: left !important;
+      }
+    }
+
+  }
+
+  @include respond(phone) {
+    border-radius: 0;
+
+    height: 150rem;
+
+    &__card {
+      $side-offset: 5%;
+
+      position: relative;
+      transition: all 2s;
+
+      background-color: rgba($color-grey-light, .8);
+
+      border-radius: 5px;
+      width: 100%;
+      height: 35rem;
+      padding: 1rem;
+      color: $color-grey-1;
+
+
+
+      &--3 &--person { float: right; }
+
+      &--3 &--container {
+        text-align: right;
+        float: right;
+      }
+
+      &--person {
+        // width: 0;
+        // display: none;
+        // position: relative;
+        // display: block;
+        // height: 100%;
+        // width: 10rem;
+        // float: left;
+        // margin: 0 1.8rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        &--face {
+          width: 0;
+          display: none;
+          // @include absCenter;
+          // top: 45%;
+          // width: 10rem;
+          // border-radius: 50%;
+        }
+        &--name {
+          position: absolute;
+          top: 85%;
+          right: 5%;
+          width: 100%;
+          text-align: right;
+          font-size: 2rem;
+
+        }
+      }
+      &--container {
+        position: relative;
+        display: block;
+
+        margin: 0;
+        height: 100%;
+        float: left;
+        width: 100%;
+
+
+        &--title {
+          display: block;
+          font-size: 3rem;
+          font-family: $default-header-font;
+          color: $color-primary;
+          text-align: center;
+        }
+        &--content {
+          // font-size: 1.8rem;
+          margin-top: 1.5rem;
+          font-style: italic;
+          text-align: center;
+        }
+      }
+
+
+
+    }
 
   }
 }

@@ -94,8 +94,6 @@
 
   @include respond(tab-port) {
 
-
-
     &-header {
       height: 100rem;
       &__title {
@@ -135,6 +133,12 @@
     }
 
 
+  }
+
+  @include respond(phone) {
+    &-header {
+      height: 150rem;
+    }
   }
 
 

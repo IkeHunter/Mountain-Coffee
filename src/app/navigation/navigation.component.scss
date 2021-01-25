@@ -158,6 +158,10 @@
       height: 9rem;
     }
 
+    &__item {
+      margin: 6rem 0;
+    }
+
     &__icon {
       &,
       &::before,
@@ -168,6 +172,8 @@
       &::before { top: -1rem;  }
       &::after { top: 1rem; }
     }
+
+
   }
 
 
