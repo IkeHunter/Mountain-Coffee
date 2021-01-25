@@ -56,7 +56,9 @@
   }
 
   @include respond(tab-port) {
-    height: 50vh;
+    height: 60vh;
+
+    &__button { top: 83% }
   }
 
 }
