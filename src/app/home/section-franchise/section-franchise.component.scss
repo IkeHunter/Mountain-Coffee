@@ -1,6 +1,7 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "components/button";
+@import "components/title";
 
 .franchise {
   background-image: linear-gradient(to bottom, rgba(31, 10, 3, 0.938), rgba(37, 16, 16, 0.5)), url("/assets/img/business-img.jpg");
@@ -21,7 +22,7 @@
     text-align: center;
 
     &--title {
-      @include title;
+      // @include title;
 
       &:after {
         content: "";
@@ -39,8 +40,10 @@
       text-align: center;
       margin: 0 auto;
 
+
       @include respond(phone) {
         width: 88%;
+        line-height: 2.7rem;
       }
     }
 
@@ -59,9 +62,9 @@
   }
 
   @include respond(tab-port) {
-    height: 60vh;
+    height: 65vh;
 
-    &__button { top: 83% }
+    &__button { top: 73% }
   }
 
 }

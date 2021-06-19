@@ -1,4 +1,5 @@
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 .section-title {
   font-family: $default-header-font;
@@ -7,4 +8,8 @@
   text-transform: uppercase;
   color: $color-grey-light;
   font-size: 4.5rem;
+
+  @include respond(tab-port) {
+    font-size: 3.2rem;
+  }
 }

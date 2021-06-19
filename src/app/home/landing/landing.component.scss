@@ -72,10 +72,19 @@
 
     animation: fadeIn .5s ease-out 2.5s;
     animation-fill-mode: backwards;
+
+    @include respond(tab-port) {
+      top: 3rem;
+      left: 3rem;
+    }
   }
 
   &__logo {
     height: 10rem;
+
+    @include respond(tab-port) {
+      height: 7rem;
+    }
   }
 
 
@@ -98,17 +107,17 @@
     &-main__title {
       margin-bottom: 10rem;
       margin-top: 35%;
-      font-size: 7rem;
+      // font-size: 7rem;
     }
     &-main__sub {
-      font-size: 2.3rem;
+      font-size: 1.5rem;
 
       &:after {
         content: "";
         display: block;
         width: 75%;
         border-bottom: 2px solid white;
-        margin: 3rem auto 20rem auto;
+        margin: 3rem auto 10rem auto;
 
       }
     }

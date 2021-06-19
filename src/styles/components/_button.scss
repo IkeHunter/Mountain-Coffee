@@ -33,14 +33,16 @@
   @include respond(tab-port) {
     &:link,
     &:visited {
-      font-size: 4rem;
+      // font-size: 4rem;
+      padding: 1rem 2.5rem;
     }
   }
 
   @include respond(phone) {
     &:link,
     &:visited {
-      width: 40rem;
+
+      // width: 30rem;
     }
   }
 

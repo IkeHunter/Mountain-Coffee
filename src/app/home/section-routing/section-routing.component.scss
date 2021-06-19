@@ -50,6 +50,10 @@
   &__content {
     width: 88%;
     margin: 0 auto;
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
   }
 
   &:hover {
@@ -62,7 +66,7 @@
   }
 
   @include respond(tab-port) {
-    height: 50rem;
+    // height: 50rem;
   }
 
 }

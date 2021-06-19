@@ -101,18 +101,20 @@
       background-position: center;
       background-blend-mode: color-burn;
 
-      height: 93vh;
+      height: 70vh;
       &__title {
         @include horizCenter;
         width: 100%;
         top: 10%;
+        font-size: 3rem;
 
       }
 
       &__content {
         @include horizCenter;
-        top: auto;
-        bottom: 3rem;
+        // top: auto;
+        // bottom: 0rem;
+        margin-top: 12rem;
         width: 95%;
         height: 70%;
         clip-path: none;
@@ -148,7 +150,7 @@
 
   @include respond(phone) {
     &-header {
-      height: 150rem;
+      height: 100rem;
     }
   }
 

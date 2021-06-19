@@ -29,8 +29,8 @@
     transform: translate(-50%, -50%);
     text-align: center;
 
-    &--title {
-
+    @include respond(tab-port) {
+      width: 100%;
     }
   }
 
@@ -204,13 +204,14 @@
 
   @include respond(tab-port) {
 
-    height: 180rem;
+    height: 130rem;
+
 
     &__card {
       position: relative;
       clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%) !important;
       width: 95%;
-      height: 45rem;
+      height: 25rem;
       // float: left;
       top: auto;
       left: auto;
@@ -231,7 +232,7 @@
         }
         &--name {
           position: absolute;
-          top: 70%;
+          top: 80%;
           width: 100%;
           text-align: center;
           font-size: 2rem;
@@ -244,7 +245,7 @@
         width: 70%;
         margin: 1rem;
         &--content {
-          line-height: 4rem;
+          line-height: 2.1rem;
         }
       }
 
@@ -258,8 +259,6 @@
   @include respond(phone) {
     border-radius: 0;
 
-    height: 150rem;
-
     &__card {
       $side-offset: 5%;
 
@@ -270,7 +269,7 @@
 
       border-radius: 5px;
       width: 100%;
-      height: 35rem;
+      // height: 35rem;
       padding: 1rem;
       color: $color-grey-1;
 

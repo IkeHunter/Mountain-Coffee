@@ -76,7 +76,7 @@ $top-padding: 2rem;
 
   @include respond(tab-port) {
     text-align: center;
-    height: 40vh;
+    height: 60vh;
     &__links {
       width: 100%;
     }
