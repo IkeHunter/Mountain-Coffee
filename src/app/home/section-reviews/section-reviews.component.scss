@@ -49,6 +49,11 @@
     padding: 1rem;
     color: $color-grey-1;
 
+    @include respond(tab-port) {
+      width: 100%;
+      border-radius: 0;
+    }
+
 
 
 

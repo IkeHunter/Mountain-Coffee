@@ -95,7 +95,13 @@
   @include respond(tab-port) {
 
     &-header {
-      height: 100rem;
+
+      background-image: linear-gradient(to left bottom, rgba(66, 66, 66, 0.6), rgba(0, 0, 0, 0.85)), url("/assets/img/header-1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: color-burn;
+
+      height: 93vh;
       &__title {
         @include horizCenter;
         width: 100%;
@@ -112,7 +118,12 @@
         clip-path: none;
         border-radius: $default-border-radius;
 
-        &--container { border-radius: $default-border-radius; }
+        box-shadow: none;
+
+        &--container {
+          background-color: transparent;
+
+        }
 
         & p {
           // position: relative;

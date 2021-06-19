@@ -94,6 +94,27 @@
 
   }
 
+  @include respond(phone) {
+    &-main__title {
+      margin-bottom: 10rem;
+      margin-top: 35%;
+      font-size: 7rem;
+    }
+    &-main__sub {
+      font-size: 2.3rem;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 75%;
+        border-bottom: 2px solid white;
+        margin: 3rem auto 20rem auto;
+
+      }
+    }
+
+  }
+
 
 }
 

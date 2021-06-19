@@ -38,7 +38,10 @@
       width: 80%;
       text-align: center;
       margin: 0 auto;
-      // font-size: $default-font-size;
+
+      @include respond(phone) {
+        width: 88%;
+      }
     }
 
   }
