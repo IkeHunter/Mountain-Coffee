@@ -9,6 +9,8 @@
 html {
   font-size: 62.5%;
 
+  scroll-behavior: smooth;
+
   @include respond(tab-land) {  // width < 1200px
     font-size: 56.25%;
   }

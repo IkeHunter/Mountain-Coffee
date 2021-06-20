@@ -18,8 +18,6 @@
 
   @include respond(tab-land) {
     width: 100%;
-  }
-  @include respond(tab-port) {
     background-attachment: scroll;
   }
 
