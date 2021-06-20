@@ -17,7 +17,9 @@
 
   position: relative;
 
-
+  @include respond(tab-port) {
+    background-attachment: scroll;
+  }
 
   &__text-box {
     position: absolute;

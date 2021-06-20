@@ -6,9 +6,10 @@
 
   &-header {
     background-image: linear-gradient(to left bottom, rgba(66, 66, 66, 0.3), rgba(0, 0, 0, 0.7)), url("/assets/img/header-1.jpg");
+    background-image: -webkit-linear-gradient(to left bottom, rgba(66, 66, 66, 0.3), rgba(0, 0, 0, 0.7)), url("/assets/img/header-1.jpg");
     background-size: cover;
     background-position: center;
-    background-blend-mode: color-burn;
+    // background-blend-mode: color-burn;
 
 
     height: 90rem;
@@ -96,10 +97,10 @@
 
     &-header {
 
-      background-image: linear-gradient(to left bottom, rgba(66, 66, 66, 0.6), rgba(0, 0, 0, 0.85)), url("/assets/img/header-1.jpg");
+      background-image: linear-gradient(to left bottom, rgba(66, 66, 66, 0.7), rgba(0, 0, 0, 0.9)), url("/assets/img/header-1.jpg");
       background-size: cover;
       background-position: center;
-      background-blend-mode: color-burn;
+      background-blend-mode: multiply;
 
       height: 70vh;
       &__title {
