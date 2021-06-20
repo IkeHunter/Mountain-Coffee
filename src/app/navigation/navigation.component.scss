@@ -44,7 +44,12 @@
       z-index: 1500;
 
       opacity: 0;
-      width: 0;
+      width: 0%;
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
+      
       transition: all .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
 
@@ -166,7 +171,16 @@
     }
 
     &__item {
-      margin: 6rem 0;
+      margin: 4rem 0;
+
+    }
+
+    &__link {
+      &:link,
+      &:visited {
+        font-size: 2.5rem;
+      }
+
     }
 
     &__icon {
